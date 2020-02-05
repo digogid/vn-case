@@ -87,10 +87,7 @@ namespace bot_reader
         var document = new Document<dynamic>
         {
           Id = Guid.NewGuid().ToString(),
-          Content = new
-          {
-            name = message
-          }
+          Content = message
         };
 
         var upsert = bucket.Upsert(document);
