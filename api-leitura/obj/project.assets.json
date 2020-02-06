@@ -5747,8 +5747,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "c:\\Projetos\\viajanet\\shared\\shared.csproj": {
-              "projectPath": "c:\\Projetos\\viajanet\\shared\\shared.csproj"
+            "C:\\Projetos\\viajanet\\shared\\shared.csproj": {
+              "projectPath": "C:\\Projetos\\viajanet\\shared\\shared.csproj"
             }
           }
         }

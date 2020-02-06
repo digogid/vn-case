@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -23,11 +24,14 @@ namespace static_pages
     // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
     public void ConfigureServices(IServiceCollection services)
     {
+      var builder = new ConfigurationBuilder()
+                           .SetBasePath(Directory.GetCurrentDirectory())
+                           .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
       services.AddMvcCore(o =>
       {
         o.EnableEndpointRouting = false;
       });
-      services.AddSingleton(Configuration);
+      services.AddSingleton(builder.Build());
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

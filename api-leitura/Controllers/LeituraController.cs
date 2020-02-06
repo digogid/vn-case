@@ -1,5 +1,4 @@
-﻿using System.IO;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -11,7 +10,7 @@ namespace api_leitura.Controllers
     public class LeituraController : ControllerBase
     {
         private readonly CouchbaseConnection repository; 
-        private static IConfiguration _iconfiguration;
+        private readonly IConfiguration _iconfiguration;
 
         public LeituraController(IConfiguration IConfiguration)
         {

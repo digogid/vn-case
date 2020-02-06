@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Projetos\\viajanet\\shared\\shared.csproj": {}
+    "C:\\Projetos\\viajanet\\shared\\shared.csproj": {}
   },
   "projects": {
-    "c:\\Projetos\\viajanet\\shared\\shared.csproj": {
+    "C:\\Projetos\\viajanet\\shared\\shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Projetos\\viajanet\\shared\\shared.csproj",
+        "projectUniqueName": "C:\\Projetos\\viajanet\\shared\\shared.csproj",
         "projectName": "shared",
-        "projectPath": "c:\\Projetos\\viajanet\\shared\\shared.csproj",
+        "projectPath": "C:\\Projetos\\viajanet\\shared\\shared.csproj",
         "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-        "outputPath": "c:\\Projetos\\viajanet\\shared\\obj\\",
+        "outputPath": "C:\\Projetos\\viajanet\\shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

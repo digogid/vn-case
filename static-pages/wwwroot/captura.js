@@ -16,7 +16,7 @@ function enviarDados() {
     },
     body: JSON.stringify(dados)
   }).then(res => {
-    console.log("Request complete! response:", res);
+    alert("sucesso ao enviar dados");
   });
 }
 

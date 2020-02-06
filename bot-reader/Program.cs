@@ -28,9 +28,9 @@ namespace bot_reader
                                  arguments: null);
 
             var consumer = new EventingBasicConsumer(channel);
-            consumer.Received += (model, ea) =>
+            consumer.Received += (model, args) =>
             {
-              var body = ea.Body;
+              var body = args.Body;
               var message = Encoding.UTF8.GetString(body);
               var userData = Newtonsoft.Json.JsonConvert.DeserializeObject<UserData>(message);
               
