@@ -11,4 +11,6 @@ A última ponta do processo é a <b>api-leitura</b>, onde é possível realizar 
 Gostaria de dizer que nunca havia utilizado o RabbitMQ e nem o Couchbase, mas achei ambas as tecnologias muito interessantes.<br>
 Refatorei uma boa parte do código que criei ao início do projeto, no entanto, sei que não fiz a refatoração em 100% do código.<br>
 <br>
+<br>
+Ah! Toda a infra fiz através do docker. Caso seja necessário alguma informação a mais sobre o mesmo, só me avisar.<br>
 Obrigado pela oportunidade!
