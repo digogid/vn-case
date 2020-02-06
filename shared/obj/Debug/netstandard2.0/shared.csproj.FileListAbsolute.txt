@@ -1,0 +1,8 @@
+C:\Projetos\viajanet\shared\bin\Debug\netstandard2.0\shared.deps.json
+C:\Projetos\viajanet\shared\bin\Debug\netstandard2.0\shared.dll
+C:\Projetos\viajanet\shared\bin\Debug\netstandard2.0\shared.pdb
+C:\Projetos\viajanet\shared\obj\Debug\netstandard2.0\shared.csprojAssemblyReference.cache
+C:\Projetos\viajanet\shared\obj\Debug\netstandard2.0\shared.AssemblyInfoInputs.cache
+C:\Projetos\viajanet\shared\obj\Debug\netstandard2.0\shared.AssemblyInfo.cs
+C:\Projetos\viajanet\shared\obj\Debug\netstandard2.0\shared.dll
+C:\Projetos\viajanet\shared\obj\Debug\netstandard2.0\shared.pdb

@@ -1,22 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-
+using Microsoft.Extensions.Configuration;
+using shared;
 namespace api_leitura.Controllers
 {
-    [ApiController]
+  [ApiController]
     [Route("[controller]")]
     public class LeituraController : ControllerBase
     {
-        [HttpGet]
-        public IActionResult GetByName(string pageName)
+        private readonly CouchbaseConnection repository; 
+        private static IConfiguration _iconfiguration;
+
+        public LeituraController(IConfiguration IConfiguration)
+        {
+            _iconfiguration = IConfiguration;
+            repository = CouchbaseConnection.Create(_iconfiguration);
+        }
+
+        [HttpGet("name/{pageName}")]
+        public async Task<IActionResult> GetByName(string pageName)
         {
            try
            {
-               return Ok();
+                var list = await repository.GetByName(pageName);
+                if (list.Any())
+                    return Ok(list);
+                return NoContent();
            }
            catch (System.Exception ex)
            {
@@ -24,12 +35,15 @@ namespace api_leitura.Controllers
            }
         }
 
-        [HttpGet]
-        public IActionResult GetByIp(string ip)
+        [HttpGet("ip/{ip}")]
+        public async Task<IActionResult> GetByIp(string ip)
         {
            try
            {
-               return Ok();
+               var list = await repository.GetByIP(ip);
+                if (list.Any())
+                    return Ok(list);
+                return NoContent();
            }
            catch (System.Exception ex)
            {

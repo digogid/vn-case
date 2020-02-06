@@ -1839,6 +1839,20 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "CouchbaseNetClient": "2.7.15",
+          "Microsoft.Extensions.Configuration": "3.1.1"
+        },
+        "compile": {
+          "bin/placeholder/shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/shared.dll": {}
+        }
       }
     }
   },
@@ -6312,6 +6326,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "shared/1.0.0": {
+      "type": "project",
+      "path": "../shared/shared.csproj",
+      "msbuildProject": "../shared/shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6323,7 +6342,8 @@
       "Microsoft.Extensions.Configuration.Json >= 3.1.1",
       "Newtonsoft.Json >= 12.0.3",
       "RabbitMQ.Client >= 5.1.2",
-      "System.Data.SqlClient >= 4.8.0"
+      "System.Data.SqlClient >= 4.8.0",
+      "shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6358,7 +6378,11 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Projetos\\viajanet\\shared\\shared.csproj": {
+              "projectPath": "c:\\Projetos\\viajanet\\shared\\shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

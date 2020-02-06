@@ -16,3 +16,13 @@ C:\Projetos\viajanet\static-pages\obj\Debug\netcoreapp3.0\static-pages.AssemblyI
 C:\Projetos\viajanet\static-pages\obj\Debug\netcoreapp3.0\static-pages.RazorTargetAssemblyInfo.cache
 C:\Projetos\viajanet\static-pages\obj\Debug\netcoreapp3.0\static-pages.dll
 C:\Projetos\viajanet\static-pages\obj\Debug\netcoreapp3.0\static-pages.pdb
+C:\Projetos\viajanet\static-pages\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Projetos\viajanet\static-pages\bin\Debug\netcoreapp3.0\shared.dll
+C:\Projetos\viajanet\static-pages\bin\Debug\netcoreapp3.0\shared.pdb
+C:\Projetos\viajanet\static-pages\obj\Debug\netcoreapp3.0\static-pages.csproj.CopyComplete
+C:\Projetos\viajanet\static-pages\bin\Debug\netcoreapp3.0\Couchbase.NetClient.dll
+C:\Projetos\viajanet\static-pages\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Projetos\viajanet\static-pages\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Projetos\viajanet\static-pages\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Projetos\viajanet\static-pages\bin\Debug\netcoreapp3.0\OpenTracing.dll
+C:\Projetos\viajanet\static-pages\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll

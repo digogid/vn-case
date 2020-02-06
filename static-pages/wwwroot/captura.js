@@ -1,4 +1,4 @@
-let userIP = '';
+let userIP = "";
 
 function enviarDados() {
   const dados = {
@@ -8,14 +8,22 @@ function enviarDados() {
     Input: JSON.stringify(capturarInputs())
   };
 
-  console.log(dados);
+  fetch("/publisher", {
+    method: "POST", 
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(dados)
+  }).then(res => {
+    console.log("Request complete! response:", res);
+  });
 }
-
 
 function capturarInputs() {
   const inputs = document.querySelectorAll("input");
   let form = {};
-  for(const input of inputs) {
+  for (const input of inputs) {
     form[input.name] = input.value;
   }
   return form;
@@ -50,7 +58,6 @@ function detectarBrowser() {
 
   var isEdgeChromium = isChrome && navigator.userAgent.indexOf("Edg") != -1;
 
-  
   if (isOpera) return "Opera";
   if (isFirefox) return "Firefox";
   if (isSafari) return "Safari";

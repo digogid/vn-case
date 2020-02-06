@@ -1,7 +1,7 @@
 ﻿using System.Text;
-using api_captura.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using RabbitMQ.Client;
+using shared;
 
 namespace api_captura.Controllers
 {
@@ -10,7 +10,8 @@ namespace api_captura.Controllers
   public class CapturaController : ControllerBase
   {
     [HttpPost]
-    public IActionResult Post(UserDataViewModel data)
+    [Consumes("application/json")]
+    public IActionResult Post(UserData data)
     {
       try
       {
@@ -39,7 +40,7 @@ namespace api_captura.Controllers
                                  routingKey: "viajanet",
                                  basicProperties: null,
                                  body: body);
-            return Ok(new { ok = true, result = "Data sended to the queue successfully" });
+            return Ok(new { ok = true, result = "Data sent to the queue" });
           }
         }
       }

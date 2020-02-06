@@ -7,12 +7,20 @@
   <title>Confirmacao</title>
   <script type="application/javascript" src="captura.js"></script>
   <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+  <link href="basic.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <form>
-    <input type="text" placeholder="nome" name="Nome" />
-    <input type="email" placeholder="email" name="Email" />
-    <button id="enviar">Enviar</button>
-  </form>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+      <li><a href="landing.html">Landing</a></li>
+      <li><a href="confirmacao.html">Confirmação</a></li>
+    </ul>
+  </nav>
+    <h1>Confirmação</h1>
+    <input type="text" placeholder="produto" name="Produto" />
+    <input type="number" placeholder="quantidade" name="Quantidade" />
+    <button id="enviar" onclick="enviarDados()">Enviar</button>
 </body>
 </html>

@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+  height: 100vh;
+  margin: auto;
+  justify-content: center;
+  justify-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+  min-height: 35px;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 1.2em;
+}
+
+button {
+  min-height: 35px;
+  border: 1px solid rgba(0, 0, 150, 0.1);
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(55, 218, 233);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 50vw;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  list-style: none;
+  padding: 5px 10px 5px 5px;
+}
+
+li:not(:last-child){
+  border-right: 1px solid rgba(0,0,0,0.2);
+}

@@ -19,3 +19,11 @@ C:\Projetos\viajanet\api-captura\obj\Debug\netcoreapp3.0\api-captura.RazorTarget
 C:\Projetos\viajanet\api-captura\obj\Debug\netcoreapp3.0\api-captura.csproj.CopyComplete
 C:\Projetos\viajanet\api-captura\obj\Debug\netcoreapp3.0\api-captura.dll
 C:\Projetos\viajanet\api-captura\obj\Debug\netcoreapp3.0\api-captura.pdb
+C:\Projetos\viajanet\api-captura\bin\Debug\netcoreapp3.0\shared.dll
+C:\Projetos\viajanet\api-captura\bin\Debug\netcoreapp3.0\shared.pdb
+C:\Projetos\viajanet\api-captura\bin\Debug\netcoreapp3.0\Couchbase.NetClient.dll
+C:\Projetos\viajanet\api-captura\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Projetos\viajanet\api-captura\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Projetos\viajanet\api-captura\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Projetos\viajanet\api-captura\bin\Debug\netcoreapp3.0\OpenTracing.dll
+C:\Projetos\viajanet\api-captura\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
