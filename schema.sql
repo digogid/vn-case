@@ -8,7 +8,9 @@ CREATE TABLE UserData (
     PageId INT NOT NULL,
     Ip VARCHAR(16) NOT NULL,
     Browser VARCHAR(100) NOT NULL,
-    Input VARCHAR(300) NOT NULL
+    Input VARCHAR(300) NOT NULL,
+     FOREIGN KEY (PageId)
+    REFERENCES Page (Id)
 )
 
 INSERT INTO Page (Name) VALUES
